@@ -1,3 +1,5 @@
+using System;
+
 namespace Amethral.Common.DTOs
 {
     // Réponse à l'initialisation
