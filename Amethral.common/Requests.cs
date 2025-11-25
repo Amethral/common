@@ -6,6 +6,11 @@ namespace Amethral.Common.DTOs
         public string DeviceId { get; set; } = string.Empty;
     }
 
+    public class LinkSessionRequest
+    {
+        public string WebToken { get; set; } = string.Empty;
+    }
+
     // 2. Polling pour vérifier le statut (Unity -> API)
     public class TokenStatusRequest
     {
