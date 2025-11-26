@@ -14,6 +14,7 @@ namespace Amethral.Common.DTOs
     public class AuthSuccessResponse
     {
         public string SessionToken { get; set; } = string.Empty; // Le sésame pour FishNet
+        public string WebToken { get; set; } = string.Empty; // Le JWT pour l'API Web
         public string Username { get; set; } = string.Empty;
         public Guid UserId { get; set; }
     }
