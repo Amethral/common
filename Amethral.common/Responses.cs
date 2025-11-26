@@ -5,8 +5,9 @@ namespace Amethral.Common.DTOs
     // Réponse à l'initialisation
     public class WebTokenResponse
     {
-        public string Token { get; set; } = string.Empty;
-        public string AuthUrl { get; set; } = string.Empty; // URL à ouvrir dans le navigateur
+        public string DeviceCode { get; set; } = string.Empty; // Secret for Unity
+        public string UserCode { get; set; } = string.Empty;   // Display to User
+        public string VerificationUrl { get; set; } = string.Empty; // URL to enter code
         public DateTime ExpiresAt { get; set; }
     }
 

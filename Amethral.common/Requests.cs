@@ -8,13 +8,13 @@ namespace Amethral.Common.DTOs
 
     public class LinkSessionRequest
     {
-        public string WebToken { get; set; } = string.Empty;
+        public string UserCode { get; set; } = string.Empty;
     }
 
     // 2. Polling pour vérifier le statut (Unity -> API)
     public class TokenStatusRequest
     {
-        public string WebToken { get; set; } = string.Empty;
+        public string DeviceCode { get; set; } = string.Empty;
         public string DeviceId { get; set; } = string.Empty;
     }
 
