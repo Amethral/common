@@ -9,4 +9,14 @@ namespace Amethral.Common.DTOs
         public string Email { get; set; } = string.Empty;
         public DateTime CreatedAt { get; set; }
     }
+
+    public class LoginResponse
+    {
+        public string token; // Le JWT retourné par l'API
+    }
+    
+    public class ErrorResponse
+    {
+        public string message;
+    }
 }
